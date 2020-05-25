@@ -22,7 +22,11 @@ const ProfileGithub = ({ getRepos, username, repos }) => {
 					<div key="repo._id" className="repo bg-white p-1 my-1">
 						<div>
 							<h4>
-								<a href="#" target="_blank" rel="noopener noreferrer">
+								<a
+									href={`https://github.com/${username}`}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									{repo.name}
 								</a>
 							</h4>

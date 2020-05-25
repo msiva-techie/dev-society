@@ -16,7 +16,8 @@ const ProfileTop = ({
 		status,
 		location,
 		user: { name, gravatar },
-		social
+		social,
+		website
 	}
 }) => {
 	return (
@@ -38,8 +39,8 @@ const ProfileTop = ({
 			</p>
 			<p>{location && <span>{location}</span>}</p>
 			<div class="icons my-1">
-				{social?.website && (
-					<a href={social.website} target="_blank" rel="noopener noreferrer">
+				{website && (
+					<a href={website} target="_blank" rel="noopener noreferrer">
 						<FontAwesomeIcon icon={faGlobe} size="lg" />
 					</a>
 				)}
