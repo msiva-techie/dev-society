@@ -1,0 +1,10 @@
+{
+	"db": {
+		"url": "mongodb+srv://siva:dev-connector%40123@cluster0-zjckr.mongodb.net/test?retryWrites=true&w=majority"
+	},
+	"jwtSecret": "mysecrettoken",
+	"github": {
+		"clientId": "2ee137f601aed898c879",
+		"clientSecret": "9b76ef18878516d52a3dc23835865b75d12b4932"
+	}
+}
