@@ -3,7 +3,7 @@ const app = express();
 const connectDB = require("./db").connectDB;
 const path = require("path");
 
-const PORT = process.env.port || 6000;
+const PORT = process.env.port || 7000;
 
 connectDB();
 
@@ -19,6 +19,7 @@ app.use("/api/posts", require("./routes/api/posts"));
 app.use("/api/profile", require("./routes/api/profile"));
 
 // Serve static assets in production
+console.log("config...", process.env.NODE_ENV);
 if (process.env.NODE_ENV === "production") {
 	// Set static folder
 	app.use(express.static("client/build"));
